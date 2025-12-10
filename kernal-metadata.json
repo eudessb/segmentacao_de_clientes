@@ -1,6 +1,6 @@
 {
-  "id": "eudessb/Costumer_Segmentation",
-  "title": "Costumer Segmentation",
+  "id": "eudessb/costumer-segmentation",
+  "title": "Costumer_Segmentation",
   "code_file": "notebook.ipynb",
   "language": "python",
   "kernel_type": "notebook",
