@@ -1,28 +1,8 @@
-name: Update Kaggle Notebook
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Clonar repositório
-        uses: actions/checkout@v3
-
-      - name: Instalar Kaggle API
-        run: pip install kaggle
-
-      - name: Configurar credenciais do Kaggle
-        run: |
-          mkdir -p ~/.kaggle
-cat <<EOF > ~/.kaggle/kaggle.json
-${{ secrets.KAGGLE_JSON }}
-EOF
-          chmod 600 ~/.kaggle/kaggle.json
-
-      - name: Enviar nova versão para o Kaggle
-        run: kaggle kernels push
+{
+  "id": "eudessb/costumer-segmentation",
+  "title": "Costumer_Segmentation",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false
+}

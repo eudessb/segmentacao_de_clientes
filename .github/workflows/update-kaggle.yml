@@ -19,7 +19,9 @@ jobs:
       - name: Configurar credenciais do Kaggle
         run: |
           mkdir -p ~/.kaggle
-          echo '${{ secrets.PERSONAL_TOKEN }}' > ~/.kaggle/kaggle.json
+cat <<EOF > ~/.kaggle/kaggle.json
+${{ secrets.KAGGLE_JSON }}
+EOF
           chmod 600 ~/.kaggle/kaggle.json
 
       - name: Enviar nova versão para o Kaggle
