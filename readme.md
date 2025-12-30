@@ -2,7 +2,7 @@
 
 **Autoria:** Eudes Silva
 
-## Descir
+## Descrição
 
 O projeto consiste em uma análise exploratória utilizando como base uma grande massa de dados relacionados a clientes de cartões de crédito. Algoritmos de aprendizado de máquina não-supervisionado como `K-Means` e `DBSCAN`, além de técnicas de limpeza de dados foram utilizados no processo.
 
